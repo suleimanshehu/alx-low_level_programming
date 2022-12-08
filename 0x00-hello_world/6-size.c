@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - full
- * Return: o 
+ * Return: o
  */
 int main(void)
 {
