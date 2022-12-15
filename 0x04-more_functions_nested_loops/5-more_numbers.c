@@ -5,7 +5,7 @@
 *  * Return: no return
 *
 */
-void more_numbers(void)
+void more_numbers(void);
 {
 int num1, num2;
 for (num1 = 0; num1 < 10; num1++)
@@ -16,10 +16,6 @@ if (num2 > 9)
 _putchar((num2 / 10) + '0');
 _putchar((num2 % 10) + '0');
 }
-_putchar('\n');
-<<<<<<< HEAD
-}
-=======
->>>>>>> 1ca40ef5ea6b94dd0cecc2911d62f717fe581afb
+ _putchar('\n');
 }
 }
