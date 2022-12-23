@@ -1,4 +1,4 @@
-x#include "main.h"
+#include "main.h"
 /**
 *reverse_array - revereses an array.
 *@a: pointer to array.

@@ -1,23 +1,24 @@
 #include "main.h"
 /**
-*string_toupper - changes all lowercase letters of a string to uppercase.
-*@x: pointer to string.
-*
-*Return: pointer to uppercase string.
+* *_strncpy - check the code.
+* @dest : int
+* @src : int
+* @n : int
+* Return: Always 0.
 */
-char *string_toupper(char *x)
+char *_strncpy(char *dest, char *src, int n)
 {
-int length;
+int i = 0;
 
-length = 0;
-
-while (x[length] != '\0')
+while (i < n && src[i] != '\0')
 {
-if (x[length] >= 97 && x[length] <= 122)
+dest[i] = src[i];
+i++;
+}
+while (i < n)
 {
-x[length] = x[length] - 32;
+dest[i] = '\0';
+i++;
 }
-length++;
-}
-return (x);
+return (dest);
 }
