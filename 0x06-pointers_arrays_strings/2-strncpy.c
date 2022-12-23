@@ -1,46 +1,23 @@
 #include "main.h"
 /**
-*_strcmp - compares two strings.
-*@s1: pointer to first string.
-*@s2: pointer to second string.
+*string_toupper - changes all lowercase letters of a string to uppercase.
+*@x: pointer to string.
 *
-*Return: value less than 0 if string is less than the other.
-*value greater than 0 if string is greater than the other.
-*0 if strings are equal.
+*Return: pointer to uppercase string.
 */
-int _strcmp(char *s1, char *s2)
+char *string_toupper(char *x)
 {
-int counter, cmpVal;
+int length;
 
-counter = 0;
-while (s1[counter] == s2[counter] && s1[counter] != '\0')
-{
-counter++;
-}
+length = 0;
 
-cmpVal = s1[counter] - s2[counter];
-return (cmpVal);
-}#include "main.h"
-/**
-* *_strncpy - check the code for Holberton School students.
-* @dest : int
-* @src : int
-* @n : int
-* Return: Always 0.
-*/
-char *_strncpy(char *dest, char *src, int n)
+while (x[length] != '\0')
 {
-int i = 0;
-
-while (i < n && src[i] != '\0')
+if (x[length] >= 97 && x[length] <= 122)
 {
-dest[i] = src[i];
-i++;
+x[length] = x[length] - 32;
 }
-while (i < n)
-{
-dest[i] = '\0';
-i++;
+length++;
 }
-return (dest);
+return (x);
 }
