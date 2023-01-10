@@ -1,15 +1,24 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
-* main - prints the number the arguments
-* @argv: array of strings of arguments
-* @argc: size of the argv
-* Return: always 0
+* main - program that prints its name, followed by a new line.
+* @argc: count arguments
+* @argv: arguments
+* Return: success
 */
 
 int main(int argc, char *argv[])
 {
-(void) argv;
-printf("%d\n", argc - 1);
+int count = 0;
+
+if (argc > 0)
+{
+while (count < argc)
+{
+printf("%s\n", argv[count]);
+count++;
+}
+}
 return (0);
 }
